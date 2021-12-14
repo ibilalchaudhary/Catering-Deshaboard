@@ -1,0 +1,22 @@
+.login__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.login__container__img {
+  height: 100vh;
+  width: 78vw;
+}
+.login__container__img__wrapper {
+  background-color: var(--overlay);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.login__container .side__bar {
+  display: flex;
+  min-width: 22vw;
+}

@@ -1,0 +1,30 @@
+.side__bar__header__right__button {
+  width: 50px;
+  height: 50px;
+  background-color: var(--white);
+  position: relative;
+  border-radius: 50px;
+}
+.side__bar__header__right__button__input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.side__bar__header__right__button__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side__bar__header__right__button__content svg {
+  width: 22px;
+  height: 22px;
+}
+.side__bar__header__right__button:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}

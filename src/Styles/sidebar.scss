@@ -1,0 +1,111 @@
+.side__bar {
+  max-width: 20vw;
+  min-width: 20vw;
+  height: 100vh;
+  background-color: var(--gray-dark);
+  z-index: 1000;
+  display: flex;
+  padding: 1.5em;
+  flex-direction: column;
+}
+.side__bar__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.side__bar__header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin-right: 1em;
+}
+.side__bar__content {
+  width: 100%;
+  height: 80%;
+}
+.side__bar__content__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.side__bar__content__form__logo {
+  font-size: 30px;
+  color: $primary;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.notification__panel {
+  display: flex;
+  flex-direction: column;
+  height: 120%;
+  margin-left: -1.2em;
+}
+.notification__panel__btn {
+  width: fit-content;
+  background-color: transparent;
+  color: $primary;
+  text-decoration: underline;
+  padding: 0em;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.notification__panel__btn:hover {
+  transition: 300ms ease-in-out;
+  color: darken($primary, 10%);
+}
+.notification__panel__content {
+  overflow: auto;
+  height: 100%;
+  padding: 1em;
+}
+.notification__panel__entry {
+  width: 100%;
+  background-color: var(--white);
+  position: relative;
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+.notification__panel__entry__btn {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  z-index: 1em;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  padding: 0em;
+}
+.notification__panel__entry__btn svg {
+  width: 12px;
+  height: 12px;
+}
+.notification__panel__entry__btn:hover {
+  transition: 300ms ease-in-out;
+  background-color: darken($primary, 10%);
+}
+.notification__panel__entry__heading {
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.notification__panel__entry__info {
+  font-size: 14px;
+  color: var(--text-color);
+}

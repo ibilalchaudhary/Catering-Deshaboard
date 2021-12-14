@@ -1,0 +1,145 @@
+.dashboard__container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 100%;
+  padding: 2em;
+  padding-top: 0em;
+}
+.dashboard__container__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.dashboard__container__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.dashboard__container__card {
+  max-width: 28%;
+  width: 28%;
+  border-radius: 10px;
+  height: 100%;
+  justify-content: space-between;
+  margin-right: 1em;
+}
+.dashboard__container__card:last-child {
+  margin-right: 0em;
+}
+.dashboard__container__card__img {
+  width: 100%;
+}
+.dashboard__container__card__content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0em 1.5em;
+  padding-bottom: 1.5em;
+}
+.dashboard__container__card__heading {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 0.1em;
+}
+.dashboard__container__card__value {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.dashboard__container__card__primary {
+  background-color: #0062ff;
+}
+.dashboard__container__card__secondary {
+  background-color: $primary;
+}
+.dashboard__container__card__chart {
+  padding: 1em;
+  border: 2px solid var(--gray);
+}
+.dashboard__container__card__chart__heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.dashboard__container__top__left {
+  margin-right: 1em;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard__container__top__left__heading {
+  font-size: 20px;
+  color: $primary;
+  font-weight: bold;
+  margin-bottom: 0.1em;
+}
+.dashboard__container__top__left__sales {
+  font-size: 40px;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.dashboard__container__top__left__sales__trend {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 0.1em;
+  white-space: nowrap;
+}
+.dashboard__container__top__left__sales__trend span {
+  margin: 0em 0.2em;
+  color: #00ff77;
+}
+.dashboard__container__top__left__month__selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.8em 0em;
+}
+.dashboard__container__top__left__month__selected__btn {
+  width: 35px;
+  height: 35px;
+  padding: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.dashboard__container__top__left__month__selected__btn svg {
+  width: 15px;
+  height: 15px;
+}
+.dashboard__container__top__left__month__selected__btn:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.dashboard__container__top__left__month__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.dashboard__container__top__left__month {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 1em;
+}
+.dashboard__container__top__left__month__primary {
+  background-color: $primary;
+}
+.dashboard__container__top__left__month__secondary {
+  background-color: #0062ff;
+}
+@media (max-width: 1440px) {
+  .dashboard__container {
+    max-height: 80vh;
+  }
+}
